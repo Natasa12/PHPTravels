@@ -113,12 +113,11 @@ public class TravelsTest extends BasicTest {
 		
 
 		TravelsCars c = new TravelsCars(driver);
-		int n = c.PhotoExist();
 		c.getUpload();
 		Thread.sleep(3000);
-		int m = c.PhotoExist();
+		boolean found = c.PhotoExist();
 		
-		Assert.assertEquals(n, m);
+		Assert.assertTrue(found);
 		
 	}
 	@Test(priority=6)

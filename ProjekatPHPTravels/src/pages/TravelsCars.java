@@ -70,10 +70,14 @@ public class TravelsCars extends BasicPage {
        dropFile.sendKeys("D:\\Java1\\ProjekatPHPTravels\\auto.jpg");
 		Thread.sleep(2000);
 	}
-	public int PhotoExist()
+
+	public boolean PhotoExist()
 	{
-		List<WebElement> photoCars=driver.findElements(By.cssSelector("img.img-responsive.colorbox.cboxElement"));
-		return photoCars.size();
+	WebElement photo=driver.findElement(By.cssSelector("[href^='https://www.phptravels.net/uploads/images/cars/slider/982429_auto.jpg']"));
+		if(photo!=null) {
+			found=true;
+		}
+		return found;
 			
 	}
 	
