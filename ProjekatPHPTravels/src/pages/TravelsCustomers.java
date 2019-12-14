@@ -32,6 +32,7 @@ public class TravelsCustomers extends BasicPage {
 
 	
 	private By search = By.xpath("//*[@id=\"content\"]/div[2]/div[2]/div/div/div[1]/div[3]/a");
+	private By searchFiled= By.cssSelector("input.xcrud-searchdata.xcrud-search-active.input-small.form-control");
 	private By go = By.cssSelector("a.xcrud-action.btn.btn-primary");
 	
 	private By noCustomers= By.tagName("td");
@@ -158,7 +159,8 @@ public class TravelsCustomers extends BasicPage {
 	public void searchGo(String name) throws InterruptedException
 	{
 		this.driver.findElement(this.search).click();
-		this.driver.findElement(this.search).sendKeys(name);
+		Thread.sleep(1000);
+		this.driver.findElement(this.searchFiled).sendKeys(name);
 		Thread.sleep(2000);
 		this.driver.findElement(this.go).click();
 		Thread.sleep(2000);

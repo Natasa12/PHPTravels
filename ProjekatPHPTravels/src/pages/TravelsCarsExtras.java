@@ -3,7 +3,6 @@ package pages;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -13,7 +12,7 @@ public class TravelsCarsExtras extends BasicPage {
 	
 	
 	private By add= By.cssSelector("a.btn.btn-success.xcrud-action");
-	private By search= By.cssSelector(".xcrud-search-toggle.btn.btn-default");
+	
 	List<WebElement> row= driver.findElements(By.cssSelector(".xcrud-row"));
 	public TravelsCarsExtras(WebDriver driver) {
 		super(driver);
@@ -43,10 +42,8 @@ public class TravelsCarsExtras extends BasicPage {
 	        price.sendKeys("300");//dodavanje cene
 	        Thread.sleep(2000);
 	        
-	        WebElement save= driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div[2]/div/div/div[1]/div[1]/a[1]"));
-	        JavascriptExecutor js= (JavascriptExecutor) driver;
-			js.executeScript("arguments[0].scrollIntoView();", save);
-			Thread.sleep(1000);
+	        WebElement save= driver.findElement(By.cssSelector("input.xcrud-searchdata.xcrud-search-active.input-small.form-control"));
+	        Thread.sleep(2000);
 	        save.click();//cuvanje
 	        Thread.sleep(2000);
 	        
