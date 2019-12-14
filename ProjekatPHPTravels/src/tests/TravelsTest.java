@@ -13,7 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pages.Abraham;
+
 import pages.TitlePage;
 import pages.TravelsCars;
 import pages.TravelsCarsExtras;
@@ -55,8 +55,6 @@ public class TravelsTest extends BasicTest {
 		driver.get(baseUrl);
 		Thread.sleep(2000);
 
-//		Abraham a= new Abraham(driver);
-//		a.Ambraham();
 		Thread.sleep(3000);
 		TravelsMenu m = new TravelsMenu(driver);
 		Thread.sleep(3000);
@@ -83,28 +81,44 @@ public class TravelsTest extends BasicTest {
 	public void numOfCars() throws Exception {
 		driver.get("https://www.phptravels.net/admin/cars");
 		Thread.sleep(2000);
-
-//		Abraham a= new Abraham(driver);
-//		a.Ambraham();
 		
 		TravelsCars c = new TravelsCars(driver);
-		System.out.println(c.carsCount());
+		System.out.println("Broj automobilaje " + c.carsCount());
 		Thread.sleep(2000);
 		
-		System.out.println(c.getOrders());
-		Thread.sleep(1000);	
+		boolean found= c.getNumOFCars();
+		
+		Assert.assertTrue(found);
 	}
+    @Test(priority=4)
+    public void numOfOrders() throws InterruptedException
+    {
+    	driver.get("https://www.phptravels.net/admin/cars");
+		Thread.sleep(2000);
+		
+		TravelsCars c = new TravelsCars(driver);
+		System.out.println("Broj ordera je " + c.getOrders());
+		Thread.sleep(1000);	
+		
+		boolean found = c.getNumOfOrders();
+		
+		Assert.assertTrue(found);
+    }
+    
 
 	@Test(priority = 5)
 	public void UploadPhotoCars() throws Exception {
 		driver.get("https://www.phptravels.net/admin/cars");
 		Thread.sleep(2000);
+		
 
-//		Abraham a= new Abraham(driver);
-//		a.Ambraham();
 		TravelsCars c = new TravelsCars(driver);
+		int n = c.PhotoExist();
 		c.getUpload();
 		Thread.sleep(3000);
+		int m = c.PhotoExist();
+		
+		Assert.assertEquals(n, m);
 		
 	}
 	@Test(priority=6)
@@ -112,12 +126,14 @@ public class TravelsTest extends BasicTest {
 	{
 		driver.get("https://www.phptravels.net/admin/cars/extras");
 		Thread.sleep(2000);
-		
-//		Abraham a= new Abraham(driver);
-//		a.Ambraham();
+
 		TravelsCarsExtras ce= new TravelsCarsExtras(driver);
 		ce.GoToAdd();
 		Thread.sleep(3000);
+		
+		boolean found= ce.CheckAdd("Driving");
+		
+		Assert.assertTrue(found);
 	}
 
 	@Test(priority=7)
@@ -132,10 +148,17 @@ public class TravelsTest extends BasicTest {
 		
 		c.ClickOnEdit();
 		Thread.sleep(2000);
-		c.setInformation("Natasa", "Zlatanovic", "hgagdsah@gmail", "075485738", "Serbia", "fhsgfhs", "Nis1", "Nis2","Enabled");
+		
+		c.setInformation("Natasa", "Zlatanovic", "hgagdsah@gmail","natsa1234", "075485738", "Serbia", "Nis1", "Nis2","Enabled");
 		c.setCheckBox();
 		Thread.sleep(3000);
 		c.clickSubmit();
 		Thread.sleep(2000);
+		
+		c.searchGo("Natasa");
+		Thread.sleep(2000);
+		
+		boolean found= c.foundCustomers();
+		Assert.assertTrue(found);
 	}
 }

@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="6" passed="3">
+<testng-results skipped="0" failed="5" ignored="0" total="7" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="168647" started-at="2019-12-10T21:11:41 CET" finished-at="2019-12-10T21:14:30 CET">
+  <suite name="Default suite" duration-ms="234782" started-at="2019-12-14T20:00:07 CET" finished-at="2019-12-14T20:04:02 CET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="168647" started-at="2019-12-10T21:11:41 CET" finished-at="2019-12-10T21:14:30 CET">
+    <test name="Default test" duration-ms="234782" started-at="2019-12-14T20:00:07 CET" finished-at="2019-12-14T20:04:02 CET">
       <class name="tests.TravelsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TravelsTest@7b49cea0]" name="setup" is-config="true" duration-ms="7885" started-at="2019-12-10T21:11:42 CET" finished-at="2019-12-10T21:11:49 CET">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TravelsTest@7b49cea0]" name="setup" is-config="true" duration-ms="7325" started-at="2019-12-14T20:00:07 CET" finished-at="2019-12-14T20:00:15 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="goLogIn()[pri:1, instance:tests.TravelsTest@7b49cea0]" name="goLogIn" duration-ms="19595" started-at="2019-12-10T21:11:50 CET" finished-at="2019-12-10T21:12:09 CET">
+        <test-method status="PASS" signature="goLogIn()[pri:1, instance:tests.TravelsTest@7b49cea0]" name="goLogIn" duration-ms="19045" started-at="2019-12-14T20:00:15 CET" finished-at="2019-12-14T20:00:34 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goLogIn -->
-        <test-method status="FAIL" signature="Menu()[pri:2, instance:tests.TravelsTest@7b49cea0]" name="Menu" duration-ms="53477" started-at="2019-12-10T21:12:09 CET" finished-at="2019-12-10T21:13:03 CET">
+        <test-method status="FAIL" signature="Menu()[pri:2, instance:tests.TravelsTest@7b49cea0]" name="Menu" duration-ms="51506" started-at="2019-12-14T20:00:34 CET" finished-at="2019-12-14T20:01:25 CET">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element <a href="https://www.phptravels.net/admin/coupons/">...</a> is not clickable at point (95, 554). Other element would receive the click: <iframe src="https://secure.livechatinc.com/licence/4618001/v2/open_chat.cgi?license=4618001&amp;group=13&amp;embedded=1&amp;widget_version=3&amp;unique_groups=0" allowtransparency="true" allow="autoplay" id="chat-widget" name="chat-widget" scrolling="no" role="application" aria-label="LiveChat chat widget" style="width: 100%; height: 100%; min-height: 0px; min-width: 0px; margin: 0px; padding: 0px; background-image: none; background-position: 0% 0%; background-size: initial; background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0); border-width: 0px; float: none; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; transition: none 0s ease 0s !important;"></iframe>
-  (Session info: chrome=78.0.3904.108)
+  (Session info: chrome=79.0.3945.79)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'OWNER-PC', ip: '192.168.3.214', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+System info: host: 'OWNER-PC', ip: '192.168.8.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ad3204592859d4b03218610a077967ae]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50287}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b0fd196449270cb1e6579da7c959f67]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="https://www.phptravels.net/admin/coupons/">...</a> is not clickable at point (95, 554). Other element would receive the click: <iframe src="https://secure.livechatinc.com/licence/4618001/v2/open_chat.cgi?license=4618001&amp;group=13&amp;embedded=1&amp;widget_version=3&amp;unique_groups=0" allowtransparency="true" allow="autoplay" id="chat-widget" name="chat-widget" scrolling="no" role="application" aria-label="LiveChat chat widget" style="width: 100%; height: 100%; min-height: 0px; min-width: 0px; margin: 0px; padding: 0px; background-image: none; background-position: 0% 0%; background-size: initial; background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0); border-width: 0px; float: none; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; transition: none 0s ease 0s !important;"></iframe>
-  (Session info: chrome=78.0.3904.108)
+  (Session info: chrome=79.0.3945.79)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'OWNER-PC', ip: '192.168.3.214', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+System info: host: 'OWNER-PC', ip: '192.168.8.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ad3204592859d4b03218610a077967ae
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50287}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b0fd196449270cb1e6579da7c959f67
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -47,7 +47,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 at pages.TravelsMenu.goToCoupons(TravelsMenu.java:83)
-at tests.TravelsTest.Menu(TravelsTest.java:72)
+at tests.TravelsTest.Menu(TravelsTest.java:70)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -82,33 +82,122 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Menu -->
-        <test-method status="PASS" signature="numOfCars()[pri:3, instance:tests.TravelsTest@7b49cea0]" name="numOfCars" duration-ms="12083" started-at="2019-12-10T21:13:03 CET" finished-at="2019-12-10T21:13:15 CET">
+        <test-method status="FAIL" signature="numOfCars()[pri:3, instance:tests.TravelsTest@7b49cea0]" name="numOfCars" duration-ms="15315" started-at="2019-12-14T20:01:25 CET" finished-at="2019-12-14T20:01:41 CET">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at tests.TravelsTest.numOfCars(TravelsTest.java:91)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- numOfCars -->
-        <test-method status="PASS" signature="UploadPhotoCars()[pri:5, instance:tests.TravelsTest@7b49cea0]" name="UploadPhotoCars" duration-ms="20060" started-at="2019-12-10T21:13:15 CET" finished-at="2019-12-10T21:13:35 CET">
+        <test-method status="PASS" signature="numOfOrders()[pri:4, instance:tests.TravelsTest@7b49cea0]" name="numOfOrders" duration-ms="17302" started-at="2019-12-14T20:01:41 CET" finished-at="2019-12-14T20:01:58 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- numOfOrders -->
+        <test-method status="FAIL" signature="UploadPhotoCars()[pri:5, instance:tests.TravelsTest@7b49cea0]" name="UploadPhotoCars" duration-ms="26099" started-at="2019-12-14T20:01:58 CET" finished-at="2019-12-14T20:02:24 CET">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [22] but found [0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [22] but found [0]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:839)
+at org.testng.Assert.assertEquals(Assert.java:849)
+at tests.TravelsTest.UploadPhotoCars(TravelsTest.java:121)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UploadPhotoCars -->
-        <test-method status="FAIL" signature="TestCarsExtras()[pri:6, instance:tests.TravelsTest@7b49cea0]" name="TestCarsExtras" duration-ms="14407" started-at="2019-12-10T21:13:35 CET" finished-at="2019-12-10T21:13:49 CET">
+        <test-method status="FAIL" signature="TestCarsExtras()[pri:6, instance:tests.TravelsTest@7b49cea0]" name="TestCarsExtras" duration-ms="25015" started-at="2019-12-14T20:02:24 CET" finished-at="2019-12-14T20:02:49 CET">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element <a href="javascript:;" data-task="save" data-after="list" class="btn btn-primary xcrud-action">...</a> is not clickable at point (298, 46). Other element would receive the click: <button class="btn btn-success">...</button>
-  (Session info: chrome=78.0.3904.108)
+  (Session info: chrome=79.0.3945.79)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'OWNER-PC', ip: '192.168.3.214', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+System info: host: 'OWNER-PC', ip: '192.168.8.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ad3204592859d4b03218610a077967ae]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50287}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b0fd196449270cb1e6579da7c959f67]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="javascript:;" data-task="save" data-after="list" class="btn btn-primary xcrud-action">...</a> is not clickable at point (298, 46). Other element would receive the click: <button class="btn btn-success">...</button>
-  (Session info: chrome=78.0.3904.108)
+  (Session info: chrome=79.0.3945.79)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'OWNER-PC', ip: '192.168.3.214', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+System info: host: 'OWNER-PC', ip: '192.168.8.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ad3204592859d4b03218610a077967ae
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50287}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b0fd196449270cb1e6579da7c959f67
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -121,8 +210,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at pages.TravelsCarsExtras.GoToAdd(TravelsCarsExtras.java:42)
-at tests.TravelsTest.TestCarsExtras(TravelsTest.java:119)
+at pages.TravelsCarsExtras.GoToAdd(TravelsCarsExtras.java:50)
+at tests.TravelsTest.TestCarsExtras(TravelsTest.java:131)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -157,25 +246,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCarsExtras -->
-        <test-method status="FAIL" signature="TestCustomers()[pri:7, instance:tests.TravelsTest@7b49cea0]" name="TestCustomers" duration-ms="40974" started-at="2019-12-10T21:13:49 CET" finished-at="2019-12-10T21:14:30 CET">
+        <test-method status="FAIL" signature="TestCustomers()[pri:7, instance:tests.TravelsTest@7b49cea0]" name="TestCustomers" duration-ms="72948" started-at="2019-12-14T20:02:49 CET" finished-at="2019-12-14T20:04:02 CET">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
               <![CDATA[element not interactable
-  (Session info: chrome=78.0.3904.108)
+  (Session info: chrome=79.0.3945.79)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'OWNER-PC', ip: '192.168.3.214', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+System info: host: 'OWNER-PC', ip: '192.168.8.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ad3204592859d4b03218610a077967ae]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50287}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b0fd196449270cb1e6579da7c959f67]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=78.0.3904.108)
+  (Session info: chrome=79.0.3945.79)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'OWNER-PC', ip: '192.168.3.214', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+System info: host: 'OWNER-PC', ip: '192.168.8.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ad3204592859d4b03218610a077967ae
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50287}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4b0fd196449270cb1e6579da7c959f67
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -187,10 +276,9 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-at pages.TravelsCustomers.setCountry(TravelsCustomers.java:84)
-at pages.TravelsCustomers.setInformation(TravelsCustomers.java:129)
-at tests.TravelsTest.TestCustomers(TravelsTest.java:135)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at pages.TravelsCustomers.searchGo(TravelsCustomers.java:160)
+at tests.TravelsTest.TestCustomers(TravelsTest.java:158)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -225,7 +313,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCustomers -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:tests.TravelsTest@7b49cea0]" name="quit" is-config="true" duration-ms="0" started-at="2019-12-10T21:14:30 CET" finished-at="2019-12-10T21:14:30 CET">
+        <test-method status="PASS" signature="quit()[pri:0, instance:tests.TravelsTest@7b49cea0]" name="quit" is-config="true" duration-ms="0" started-at="2019-12-14T20:04:02 CET" finished-at="2019-12-14T20:04:02 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

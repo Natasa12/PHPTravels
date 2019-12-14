@@ -30,6 +30,15 @@ public class TravelsCars extends BasicPage {
 	{
 		return carsList().size();
 	}
+	boolean found=false;
+	public boolean getNumOFCars()
+	{
+		if(this.carsCount()==10)
+		{
+			found= true;
+		}
+		return found;
+	}
 	public int getOrders()
 	{
 		int sum = 0;
@@ -39,6 +48,14 @@ public class TravelsCars extends BasicPage {
 			sum=sum + Integer.parseInt(order);
 		}
 		return sum;
+	}
+	public boolean getNumOfOrders()
+	{
+		if(this.getOrders()>50)
+		{
+			found= true;
+		}
+		return found;
 	}
 	public  void getUpload() throws Exception 
 	{
@@ -52,6 +69,12 @@ public class TravelsCars extends BasicPage {
 
        dropFile.sendKeys("D:\\Java1\\ProjekatPHPTravels\\auto.jpg");
 		Thread.sleep(2000);
+	}
+	public int PhotoExist()
+	{
+		List<WebElement> photoCars=driver.findElements(By.cssSelector("img.img-responsive.colorbox.cboxElement"));
+		return photoCars.size();
+			
 	}
 	
 

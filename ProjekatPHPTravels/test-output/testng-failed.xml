@@ -6,8 +6,10 @@
       <class name="tests.TravelsTest">
         <methods>
           <include name="TestCarsExtras"/>
+          <include name="numOfCars"/>
           <include name="Menu"/>
           <include name="TestCustomers"/>
+          <include name="UploadPhotoCars"/>
           <include name="quit"/>
           <include name="setup"/>
         </methods>
