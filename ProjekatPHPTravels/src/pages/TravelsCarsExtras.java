@@ -42,7 +42,7 @@ public class TravelsCarsExtras extends BasicPage {
 	        price.sendKeys("300");//dodavanje cene
 	        Thread.sleep(2000);
 	        
-	        WebElement save= driver.findElement(By.cssSelector("input.xcrud-searchdata.xcrud-search-active.input-small.form-control"));
+	        WebElement save= driver.findElement(By.cssSelector("#content > div.panel.panel-default > div.panel-body > div > div > div.xcrud-ajax > div.xcrud-top-actions.btn-group > a.btn.btn-primary.xcrud-action"));
 	        Thread.sleep(2000);
 	        save.click();//cuvanje
 	        Thread.sleep(2000);
